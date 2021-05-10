@@ -11,28 +11,50 @@
     <div class="container">
       <h1 class="mb-3">Log in</h1>
 
-    <h3 class="text-left">Email Address</h3>
+    <p class="log-inf">Email Address</p>
      <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light mt-3 mb-3 ml-1"></div>
-    <h3>Password</h3>
+    <p class="log-inf">Password</p>
     <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light mt-3 mb-3 ml-1"></div>
-      <div class="checkbox"></div>
-    <div class="justify-content-between">
       
-      <p>REMEBER ME</p>
-      <p>Forgot Password</p>
+ 
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+         <div class="checkbox"></div>
+          <p class="log-inf">REMEBER ME</p>
+          <p class="thin-text">Forgot Password</p>
+      </div>
     </div>
+    </div>
+
+
+
+
+
     
     
     <div class="row d-flex justify-content-between">
       <div class="button-cancel text-center">CANCEL</div>
       <div class="button-login">LOGIN</div>
     </div>
-    <p>Don't have account yet?</p>
-    <p>Sign Up here</p>
+
+
+<div class="container px-4">
+  <div class="row gx-5">
+    <div class="col">
+     <div class="thin-text p-3">Don't have account yet?</div>
+    </div>
+    <div class="col">
+      <div class="thin-text p-3">Sign Up here</div>
     </div>
   </div>
 </div>
-    <footer><i class="fab fa-facebook-f"></i></footer>
+   
+    </div>
+  </div>
+</div>
+    <footer>The footer</footer>
 </template>
 
 <script>
@@ -104,6 +126,18 @@ export default {
 }
 footer {
   height: 50px;
+}
+.log-inf {
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  color: rgba(0,0,0,0.87);
+  text-align: left;
+}
+.thin-text {
+  font-family: Roboto-Light;
+  font-size: 12px;
+  color: rgba(0,0,0,0.87);
+  text-align: right;
 }
 
 </style>
