@@ -1,4 +1,5 @@
 <template>
+  <h2>{{msg}}</h2>
 <div class="split left">
   <div class="centered">
     <h2>The photo</h2>
