@@ -37,7 +37,7 @@
     
     <div class="row d-flex justify-content-between">
       <div class="button-cancel text-center">CANCEL</div>
-      <div class="button-login">LOGIN</div>
+      <div class="button-login"><router-link class="link" to="/about">LogIn</router-link></div>
     </div>
 
 
@@ -140,5 +140,42 @@ footer {
   color: rgba(0,0,0,0.87);
   text-align: right;
 }
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+/*transition animation*/
 
+.modal {
+  width: 250px;
+  height: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 2%;
+  background-color: #e0e0e0;
+}
+/*** TRANSITIONS ***/
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
+}
+.fade-leave-to {
+  opacity: 0;
+}
+.slide-fade-enter {
+  transform: translateX(10px);
+  opacity: 0;
+}
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.2s ease;
+}
+.slide-fade-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
+}
 </style>

@@ -1,18 +1,27 @@
 <template>
-  <div class="about">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <MainPage msg="Welcome to Your Vue.js App"/>
-  </div>
+ 
+
+
+<h2>Main page</h2>
+
+
+
+
 </template>
 
 <script>
 // @ is an alias to /src
-import MainPage from '@/components/MainPage.vue'
 
 export default {
-  name: 'About',
-  components: {
-    MainPage
+  data() {
+    return {
+      isOpen: false
+    }
+  },
+  methods: {
+    toggleModal() {
+      this.isOpen = !this.isOpen
+    }
   }
 }
 </script>
