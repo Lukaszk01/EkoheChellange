@@ -1,0 +1,109 @@
+<template>
+<div class="split left">
+  <div class="centered">
+    <h2>The photo</h2>
+    <img class="image" src="@/assets/logInPageImage.svg" alt="">
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <div class="container">
+      <h1 class="mb-3">Log in</h1>
+
+    <h3 class="text-left">Email Address</h3>
+     <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light mt-3 mb-3 ml-1"></div>
+    <h3>Password</h3>
+    <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light mt-3 mb-3 ml-1"></div>
+      <div class="checkbox"></div>
+    <div class="justify-content-between">
+      
+      <p>REMEBER ME</p>
+      <p>Forgot Password</p>
+    </div>
+    
+    
+    <div class="row d-flex justify-content-between">
+      <div class="button-cancel text-center">CANCEL</div>
+      <div class="button-login">LOGIN</div>
+    </div>
+    <p>Don't have account yet?</p>
+    <p>Sign Up here</p>
+    </div>
+  </div>
+</div>
+    <footer><i class="fab fa-facebook-f"></i></footer>
+</template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.right {
+  right: 0;
+  background-color: #ffff;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 1120px;
+}
+.button-cancel {
+  width: 100px;
+  height: 30px;
+  background: #1A1B35;
+  border-radius: 100px;
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+
+}
+.button-login {
+  width: 100px;
+  height: 30px;
+  background-image: linear-gradient(132deg, #62419A 0%, #3E76EB 100%);
+  border-radius: 100px;
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.checkbox {
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  width: 15px;
+  height: 15px;
+}
+footer {
+  height: 50px;
+}
+
+</style>
