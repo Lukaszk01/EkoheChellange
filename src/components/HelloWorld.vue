@@ -1,5 +1,4 @@
 <template>
-  <h2>{{msg}}</h2>
 <div class="split left">
   <div class="centered">
     <h2>The photo</h2>
@@ -11,47 +10,25 @@
   <div class="centered">
     <div class="container">
       <h1 class="mb-3">Log in</h1>
-
-    <p class="log-inf">Email Address</p>
-     <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light mt-3 mb-3 ml-1"></div>
-    <p class="log-inf">Password</p>
-    <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light mt-3 mb-3 ml-1"></div>
-      
- 
-
-    <div class="container">
-      <div class="row text-center">
+        <p class="log-inf">Email Address</p>
+          <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light mt-3 mb-3 ml-1"></div>
+        <p class="log-inf">Password</p>
+          <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light mt-3 mb-3 ml-1"></div>
+    </div>
+  <div class="container">
+    <div class="row text-center">
         <div class="col">
-         <div class="checkbox"></div>
-          <p class="log-inf">REMEBER ME</p>
-          <p class="thin-text">Forgot Password</p>
+          <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-start">
+              <div class="checkbox"></div>
+              <p class="log-inf ml-3">REMEBER ME</p>
+            </div>
+          <p class="thin-text justify-content-end">Forgot Password</p>
+        </div>
+         
+          
       </div>
     </div>
-    </div>
-
-
-
-
-
-    
-    
-    <div class="row d-flex justify-content-between">
-      <div class="button-cancel text-center">CANCEL</div>
-      <div class="button-login"><router-link class="link" to="/main">LogIn</router-link></div>
-    </div>
-
-
-<div class="container px-4">
-  <div class="row gx-5">
-    <div class="col">
-     <div class="thin-text p-3">Don't have account yet?</div>
-    </div>
-    <div class="col">
-      <div class="thin-text p-3">Sign Up here</div>
-    </div>
-  </div>
-</div>
-   
     </div>
   </div>
 </div>
@@ -126,9 +103,7 @@ export default {
   width: 15px;
   height: 15px;
 }
-footer {
-  height: 50px;
-}
+
 .log-inf {
   font-family: Roboto-Medium;
   font-size: 12px;
@@ -178,5 +153,14 @@ footer {
 .slide-fade-leave-to {
   transform: translateX(-10px);
   opacity: 0;
+}
+.container {
+  width: 500px;
+}
+.forgot-password label{
+  font-family: Roboto-Light;
+  font-size: 12px;
+  color: rgba(0,0,0,0.87);
+  text-align: left;
 }
 </style>

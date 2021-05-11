@@ -1,7 +1,7 @@
 <template>
 
 <h2>yo</h2>
-<div class="show"></div>
+
 </template>
 
 <script>
