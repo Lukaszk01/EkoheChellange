@@ -7,6 +7,7 @@
       <router-view />
     </transition>
   <router-view/>
+  <footer>The footer</footer>
 </template>
 
 <style>

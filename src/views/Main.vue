@@ -5,31 +5,23 @@
 <h2>Main page</h2>
 <div class="container">
 	<div class="single-show">
-		<div v-for="inf in info" :key="inf" id="app">
+		<div class="row">
+			<div class="image">
+			<img class="img d-flex justify-content-start" src="https://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg" alt="">
+		</div>
+		<div class="info">
+			<div class="d-flex align-items-end" v-for="inf in info" :key="inf" id="app">
 			<ul>
-				<li>{{ inf.name }}</li>
-				<li>{{ inf.type }}</li>
-				<li>{{ inf.language }}</li>
-				<li>{{ inf.genrs }}</li>
-				<li>{{ inf.summary }}</li>
-				<li>{{ inf.timezone }}</li>
-				<li></li>
+				<p>{{ inf.name }}</p>
+				<p>{{ inf.summary }}</p>
+			
 			</ul>
-  
-  
-  
-    
-  
-</div>
+			</div>
+		</div>
 	</div>
+		</div>
+		
 </div>
-
-
-
-
-
-
-
 </template>
 
 <script>
@@ -77,5 +69,21 @@ export default {
 		background: #D6D8E7;
 		border-radius: 6px;
 		opacity: 0.7;
+	}
+	.img {
+		border-radius: 5px;
+		height: 250px;
+		width: 150px;
+		opacity: 0.7;
+		padding: 10px;
+	}
+	.row>* {
+		width: 30%;
+	}
+	.info p{
+		font-family: Roboto-Medium;
+		font-size: 12px;
+		color: rgba(0,0,0,0.87);
+		text-align: left;
 	}
 </style>
