@@ -5,32 +5,31 @@
 	<div class="single-show">
 		<div class="row">
 			<div class="image">
-			<img class="img d-flex justify-content-start" src="https://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg" alt="">
-		</div>
-		<div class="info">
-			<div class="d-flex align-items-end" v-for="inf in info" :key="inf">
-
-			<ul v-if="inf <= 1">
-				{{info.data[0].show.summary}}
-<!-- 				<h3 class="show-name"><b>{{ inf.name }}</b></h3>
-				<p>Summary: {{ info.data[0].show.summary }}</p>
-				<p>Language: {{ info.data[0].show.language }}</p>
-				<p>Runtime: {{ info.data[0].show.runtime }}</p>
-				<p>premiered: {{ info.data[0].show.premiered }}</p>
-				<p>officialSite: {{ info.data[0].show.officialSite }}</p>
-				<p>rating: {{ info.data[0].show.rating }}</p> -->
-			
-			</ul>
+				<img class="img d-flex justify-content-start" src="https://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg" alt="">
+				<img class="planet" src="@/assets/planetIcon.svg" alt="">
 			</div>
-		</div>
+				<div class="info">
+					<div class="d-flex align-items-end" v-for="inf in info" :key="inf">
+						<ul v-if="inf <= 1">
+							{{info.data[0].show.summary}}
+							<i class="fab fa-soundcloud"></i>
+							<!--<h3 class="show-name"><b>{{ inf.name }}</b></h3>
+							<p>Summary: {{ info.data[0].show.summary }}</p>
+							<p>Language: {{ info.data[0].show.language }}</p>
+							<p>Runtime: {{ info.data[0].show.runtime }}</p>
+							<p>premiered: {{ info.data[0].show.premiered }}</p>
+							<p>officialSite: {{ info.data[0].show.officialSite }}</p>
+							<p>rating: {{ info.data[0].show.rating }}</p> -->
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>	
 	</div>
-		</div>
-		
-</div>
 </template>
 
 <script>
-// @ is an alias to /src
   import axios from 'axios'
 
 

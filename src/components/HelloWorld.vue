@@ -1,15 +1,16 @@
 <template>
 <div class="split left">
   <div class="centered">
-    <h2>The photo</h2>
+    <!-- <img class="planet" src="@/assets/planetIcon.svg" alt=""> -->
     <img class="image" src="@/assets/logInPageImage.svg" alt="">
+    <div class="logo">LOGO</div>
   </div>
 </div>
 
 <div class="split right">
   <div class="centered">
     <div class="container">
-      <h1 class="mb-3">Log in</h1>
+      <h1>Log in</h1>
         <p class="log-inf">Email Address</p>
           <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light mt-3 mb-3 ml-1"></div>
         <p class="log-inf">Password</p>
@@ -23,16 +24,35 @@
               <div class="checkbox"></div>
               <p class="log-inf ml-3">REMEBER ME</p>
             </div>
-          <p class="thin-text justify-content-end">Forgot Password</p>
+          <p class="forgot-password justify-content-end">Forgot Password</p>
         </div>
-         
-          
       </div>
     </div>
     </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <div class="d-flex justify-content-between">
+              <div class="button-cancel text-center mt-3">CANCEL</div>
+              <div class="button-login mt-3"><router-link class="link" to="/main">LOGIN</router-link></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <div class="d-flex justify-content-end">
+              <div class="thin-text p-3">Don't have account yet?</div>
+              <div class="sign-up p-3">Sign Up here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!--  <img class="planet" src="@/assets/planetIcon.svg" alt=""> -->
   </div>
 </div>
-    
+    <footer></footer>
 </template>
 
 <script>
@@ -48,15 +68,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-
 .split {
   height: 100%;
   width: 50%;
   position: fixed;
-  z-index: 1;
   top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+  /*padding-top: 20px;*/
+  overflow: hidden;
 }
 
 
@@ -73,7 +91,12 @@ export default {
   text-align: center;
 }
 .centered img {
-  width: 1120px;
+  width: 1130px;
+  opacity: 0.4;
+  z-index: 2;
+  position: absolute;
+  top: -310px;
+  left: -334px;
 }
 .button-cancel {
   width: 100px;
@@ -84,6 +107,7 @@ export default {
   font-size: 12px;
   color: #FFFFFF;
   text-align: center;
+  padding: 5px;
 
 }
 .button-login {
@@ -95,6 +119,7 @@ export default {
   font-size: 12px;
   color: #FFFFFF;
   text-align: center;
+  padding: 5px;
 }
 .checkbox {
   background: #FFFFFF;
@@ -157,10 +182,55 @@ export default {
 .container {
   width: 500px;
 }
-.forgot-password label{
+.forgot-password {
   font-family: Roboto-Light;
   font-size: 12px;
   color: rgba(0,0,0,0.87);
   text-align: left;
+  text-decoration: underline;
+}
+.sign-up {
+  font-family: Roboto-Light;
+  font-size: 12px;
+  color: rgba(0,0,0,0.87);
+  text-align: right;
+  text-decoration: underline;
+}
+.link {
+  font-family: Roboto-Medium;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px;
+}
+h1 {
+  font-family: Roboto-Medium;
+  font-size: 20px;
+  color: rgba(0,0,0,0.87);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.planet {
+  position: absolute;
+  overflow: hidden;
+
+}
+.logo {
+  padding: 25px;
+  background: #1A1B35;
+  border-radius: 13px;
+  font-family: Roboto-Medium;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  z-index: 1;
+  bottom: 245px;
+  opacity: 1;
+  right: 270px;
 }
 </style>

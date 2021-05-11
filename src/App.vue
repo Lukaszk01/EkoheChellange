@@ -1,17 +1,19 @@
 <template>
+
   <transition name="slide-fade" mode="out-in">
-      <router-view />
+     <router-view></router-view>
+
     </transition>
-  <router-view/>
-  <footer class="row text-left">
-    <p>Terms of Service</p>
-    <p>Contact Us</p>
-    <i class="fab fa-facebook-f"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-spotify"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-soundcloud"></i>
-  </footer>
+       <appFooter class="row text-left">
+        <p class="term-of-service">Terms of Service</p>
+        <p class="contact-us">Contact Us</p>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-spotify"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-soundcloud"></i>
+      </appFooter>
+  
 </template>
 
 <style>
@@ -68,7 +70,7 @@
   transform: translateX(-10px);
   opacity: 0;
 }
-footer {
+appFooter {
   height: 40px;
   background: #1A1B35;
   opacity: 0.8;
@@ -76,10 +78,16 @@ footer {
   font-size: 12px;
   color: rgba(255,255,255,0.87);
   text-align: left;
-  opacity: 0.8;
-  font-family: Roboto-Regular;
-  font-size: 12px;
-  color: rgba(255,255,255,0.87);
-  text-align: left;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+
+
 }
+.term-of-service {
+  margin-left: 20px;
+  
+}
+
+
 </style>
