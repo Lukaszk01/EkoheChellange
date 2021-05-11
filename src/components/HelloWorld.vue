@@ -37,7 +37,7 @@
     
     <div class="row d-flex justify-content-between">
       <div class="button-cancel text-center">CANCEL</div>
-      <div class="button-login"><router-link class="link" to="/about">LogIn</router-link></div>
+      <div class="button-login"><router-link class="link" to="/main">LogIn</router-link></div>
     </div>
 
 
@@ -59,6 +59,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'HelloWorld',
   props: {
