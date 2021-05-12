@@ -7,7 +7,7 @@
   </div>
 </div>
 
-<div class="split right">
+<div class="split right col-12">
   <div class="centered">
     <div class="container">
       <h1>Log in</h1>
@@ -68,6 +68,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+
 .split {
   height: 100%;
   width: 50%;
@@ -81,6 +82,7 @@ export default {
 .right {
   right: 0;
   background-color: #ffff;
+  display: flex;
 }
 
 .centered {
@@ -97,6 +99,7 @@ export default {
   position: absolute;
   top: -310px;
   left: -334px;
+  display: flex;
 }
 .button-cancel {
   width: 100px;
@@ -216,7 +219,7 @@ h1 {
 
 }
 .logo {
-  padding: 25px;
+  padding: 23px;
   background: #1A1B35;
   border-radius: 13px;
   font-family: Roboto-Medium;
@@ -225,12 +228,62 @@ h1 {
   text-align: center;
   position: relative;
   border: 1px solid black;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   text-align: center;
   z-index: 1;
   bottom: 245px;
   opacity: 1;
   right: 270px;
 }
+/*RESPONSIVE VERSIONS*/
+@media only screen and (max-width: 600px) {
+  .centered img {
+  width: 1130px;
+  opacity: 0.4;
+  z-index: 2;
+  position: absolute;
+  top: -310px;
+  left: -334px;
+  display: none
+}
+  [class*="col-"] {
+    width: 100%;
+  }
+  .container {
+    width: 350px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+/*  .split {
+    width: 100%;
+  }
+  .container {
+    width: 350px;
+  }*/
+  .centered img {
+  width: 1130px;
+  opacity: 0.4;
+  z-index: 2;
+  position: absolute;
+  top: -310px;
+  left: -334px;
+  display: none
+}
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .centered img {
+    display: flex;
+  }
+  [class*="col-"] {
+    width: 50%;
+  }
+}
+
+
 </style>
