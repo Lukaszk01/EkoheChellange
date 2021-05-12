@@ -14,7 +14,13 @@ const routes = [
     // this generates a separate chunk (Main.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "Main" */ '../views/Main.vue')
-  }
+  },
+  //   {
+  //   path: '/searchResults',
+  //   name: 'SearchResults',
+  //   component: SearchResult
+  // },
+
 ]
 
 const router = createRouter({

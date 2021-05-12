@@ -3,7 +3,7 @@
   <div class="centered">
     <!-- <img class="planet" src="@/assets/planetIcon.svg" alt=""> -->
     <img class="image" src="@/assets/logInPageImage.svg" alt="">
-    <div class="logo">LOGO</div>
+    <div class="logo"> <p>LOGO</p> </div>
   </div>
 </div>
 <div class="split right col-12">
@@ -219,21 +219,27 @@ h1 {
 
 }
 .logo {
-  padding: 23px;
   background: #1A1B35;
   border-radius: 13px;
   font-family: Roboto-Medium;
-  font-size: 20px;
   color: #FFFFFF;
-  text-align: center;
+  display-content: center;
+  display: flex;
   position: relative;
   border: 1px solid black;
-  height: 90px;
-  width: 90px;
-  z-index: 1;
+  height: 75px;
+  width: 75px;
+  z-index: 2;
   bottom: 245px;
   opacity: 1;
   right: 270px;
+  align-items: center;
+  justify-content: center;
+
+}
+.logo p {
+  margin-top: 10px;
+  font-size: 20px;
 }
 header {
   background: #1A1B35;
