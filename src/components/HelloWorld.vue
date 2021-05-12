@@ -6,8 +6,8 @@
     <div class="logo">LOGO</div>
   </div>
 </div>
-
 <div class="split right col-12">
+  <header class="text-left"> <p>LOGO</p> </header>
   <div class="centered">
     <div class="container">
       <h1>Log in</h1>
@@ -230,11 +230,17 @@ h1 {
   border: 1px solid black;
   height: 90px;
   width: 90px;
-  text-align: center;
   z-index: 1;
   bottom: 245px;
   opacity: 1;
   right: 270px;
+}
+header {
+  background: #1A1B35;
+  height: 40px;
+  font-family: Roboto-Regular;
+  top: 0px;
+  width: 100%;
 }
 /*RESPONSIVE VERSIONS*/
 @media only screen and (max-width: 600px) {
@@ -253,6 +259,20 @@ h1 {
   .container {
     width: 350px;
   }
+  header {
+  height: 40px;
+  top: 0px;
+  width: 100%;
+  background: #222222;
+
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: left;
+}
+header p {
+
+}
 
 }
 
@@ -275,6 +295,20 @@ h1 {
   [class*="col-"] {
     width: 100%;
   }
+  header {
+  background: #1A1B35;
+  height: 40px;
+  top: 0px;
+  width: 100%;
+
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: left;
+}
+header p {
+  margin-left: 10px;
+}
 }
 @media only screen and (min-width: 992px) {
   .centered img {
@@ -283,6 +317,14 @@ h1 {
   [class*="col-"] {
     width: 50%;
   }
+  header {
+  background: #1A1B35;
+  height: 40px;
+  font-family: Roboto-Regular;
+  top: 0px;
+  width: 100%;
+  display: none;
+}
 }
 
 

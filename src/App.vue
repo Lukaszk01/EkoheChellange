@@ -4,15 +4,25 @@
      <router-view></router-view>
 
     </transition>
-       <appFooter class="row text-left">
-        <p class="term-of-service">Terms of Service</p>
-        <p class="contact-us">Contact Us</p>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-spotify"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-soundcloud"></i>
-      </appFooter>
+
+
+
+
+      <div class="footer">
+        <div class="row text-left">
+          <ul id="fo">
+            <li class="term-of-service">Terms of Service</li>
+            <li class="contact-us">Contact Us</li>
+            <li><img src="@/assets/facebook.svg" alt=""></li>
+            <li class=""><img src="@/assets/instagram.svg" alt=""></li>
+            <li class=""><img src="@/assets/tweeter.svg" alt=""></li>
+            <li class=""><img src="@/assets/soundcloud.svg" alt=""></li>
+            <li class=""><img src="@/assets/spotify.svg" alt=""></li>
+          </ul>  
+        </div>
+      </div>
+
+      
   
 </template>
 
@@ -70,10 +80,12 @@
   transform: translateX(-10px);
   opacity: 0;
 }
-appFooter {
+.term-of-service {
+  margin-left: 20px;
+}
+.footer {
   height: 40px;
   background: #1A1B35;
-  opacity: 0.8;
   font-family: Roboto-Regular;
   font-size: 12px;
   color: rgba(255,255,255,0.87);
@@ -81,13 +93,20 @@ appFooter {
   position: fixed;
   bottom: 0px;
   width: 100%;
-
-
 }
-.term-of-service {
-  margin-left: 20px;
-  
+.footer li {
+  display: inline-block;
+  margin-right: 15px;
 }
-
+.social-media {
+  margin-left: 1120px;
+}
+.social-media li {
+  margin-right: 30px;
+  margin-left: 0px;
+}
+#fo {
+  display: inline-block;
+}
 
 </style>
