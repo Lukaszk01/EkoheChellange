@@ -1,8 +1,8 @@
 <template>
 <div class="split left">
   <div class="centered">
-    <img class="planet" src="@/assets/planetIcon.svg" alt="">
-    <img class="image" src="@/assets/logInPageImage.svg" alt="">
+    <img class="planet" src="@/assets/Image.png" style="width: 700px height: 1050px" alt="">
+    <!-- <img class="image" src="@/assets/logInPageImage.svg" alt=""> -->
     <div class="logo"> <p>LOGO</p> </div>
   </div>
 </div>
@@ -16,49 +16,47 @@
         <p class="log-inf">Password</p>
           <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light mt-3 mb-3 ml-1"></div>
     </div>
-  <div class="container">
-    <div class="row text-center">
-        <div class="col">
-          <div class="d-flex justify-content-between">
-            <div class="d-flex justify-content-start">
-              <div class="checkbox"></div>
-              <p class="log-inf ml-3">REMEBER ME</p>
-            </div>
-          <p class="forgot-password justify-content-end">Forgot Password</p>
-        </div>
-      </div>
-    </div>
-    </div>
-      <div class="container">
-        <div class="row text-center">
+    <div class="container">
+      <div class="row text-center">
           <div class="col">
             <div class="d-flex justify-content-between">
-              <div class="button-cancel text-center mt-3">CANCEL</div>
-              <div class="button-login mt-3"><router-link class="link" to="/main">LOGIN</router-link></div>
-            </div>
+              <div class="d-flex justify-content-start">
+                <div class="checkbox"></div>
+                <p class="log-inf ml-3">REMEBER ME</p>
+              </div>
+            <p class="forgot-password justify-content-end">Forgot Password</p>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <div class="d-flex justify-content-end">
-              <div class="thin-text p-3">Don't have account yet?</div>
-              <div class="sign-up p-3">Sign Up here</div>
+      </div>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <div class="d-flex justify-content-between">
+                <div class="button-cancel text-center mt-3">CANCEL</div>
+                <div class="button-login mt-3"><router-link class="link" to="/main">LOGIN</router-link></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-     <!--  <img class="planet" src="@/assets/planetIcon.svg" alt=""> -->
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <div class="d-flex justify-content-end">
+                <div class="thin-text p-3">Don't have account yet?</div>
+                <div class="sign-up p-3">Sign Up here</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
   </div>
-</div>
-    <footer></footer>
 </template>
 
 <script>
 
 export default {
-  name: 'HelloWorld',
+  name: 'home',
   props: {
     msg: String
   }
@@ -93,15 +91,14 @@ export default {
   text-align: center;
 }
 .centered {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
 }
 .centered img {
   width: 1130px;
-  opacity: 0.4;
   z-index: 2;
   position: absolute;
   top: -310px;
@@ -225,6 +222,9 @@ h1 {
   overflow: hidden;
 
 }
+.contained img {
+  width: 50%;
+}
 .logo {
   background: #1A1B35;
   border-radius: 13px;
@@ -259,7 +259,7 @@ header {
 @media only screen and (max-width: 600px) {
   .centered img {
   width: 1130px;
-  opacity: 0.4;
+  
   z-index: 2;
   position: absolute;
   top: -310px;
@@ -298,7 +298,7 @@ header p {
   }*/
   .centered img {
   width: 1130px;
-  opacity: 0.4;
+  
   z-index: 2;
   position: absolute;
   top: -310px;
