@@ -11,7 +11,9 @@
               <div class="row">
                 <div class="info">
                     <header class="series-card-header">
-                      <h2 class="series-card-title">{{ item.show.name }}</h2>
+                      <h2 class="series-card-title mt-3">{{ item.show.name }}</h2>
+                        <h2 class="series-card-summary">{{ item.show.summary.replace(reg, "") }}</h2>
+                        <h3 class="genre"><b>Genre: </b></h3>
                         <div class="series-genres">
                           <div
                             class="series-genres-item"
@@ -20,6 +22,7 @@
                             >
                             <div>{{ genre }}</div>
                         </div>
+                        <div><b>Runtime: </b>{{ item.show.runtime}}min</div>
                       </div>
                   </header> 
                 </div>
@@ -39,6 +42,7 @@
 </template>
 
 <script>
+  // const regex = /<[^>]*>/gm
 import { favoriteStorage } from "../store";
 export default {
   props: {
@@ -48,8 +52,9 @@ export default {
   },
   data() {
     return {
+      reg: /<[^>]*>/gm,
       favoriteShows: favoriteStorage.fetch(),
-      isFavorite: null
+      isFavorite: null,
     };
   },
   created() {
@@ -68,7 +73,7 @@ export default {
   methods: {
     setIsFavoriteInitialValue() {
       this.isFavorite = !!this.favoriteShows[this.item.show.id];
-    }
+    },
   }
 };
 </script>
@@ -84,6 +89,8 @@ export default {
     font-family: Roboto-Medium;
     background: #D6D8E7;
     margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow: auto;
   }
   .series-card-poster {
     border-radius: 25px;
@@ -111,5 +118,28 @@ export default {
   }
   .series-card-title {
     text-decoration: none;
+    width: 500px;
+
+  }
+  a {
+    text-decoration: none;
+  }
+  .image {
+    margin-right: -140px;
+  }
+  .series-card-summary {
+    font-size: 16px;
+    width: 800px;
+    word-wrap: break-word;
+  }
+  .series-genres {
+    white-space: nowrap;
+  }
+  .series-genres-item {
+    font-weight: normal;
+  }
+  .genre {
+    width: 200px;
+    font-size: 20px;
   }
 </style>
