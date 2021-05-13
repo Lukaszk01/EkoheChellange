@@ -284,7 +284,7 @@ header {
   text-align: left;
 }
 header p {
-
+  margin-left: 15px;
 }
 
 }
