@@ -1,7 +1,7 @@
 <template>
   <div>
     <form @submit.prevent="emitQuery">
-      <label for="search-form__input">Picke the TV show you like!</label>
+      <label for="search-form__input">Pick a TV show you like!</label>
       <input
         id="search-form__input"
         type="search"

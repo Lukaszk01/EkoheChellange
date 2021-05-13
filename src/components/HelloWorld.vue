@@ -1,14 +1,14 @@
 <template>
 <div class="split left">
   <div class="centered">
-    <!-- <img class="planet" src="@/assets/planetIcon.svg" alt=""> -->
+    <img class="planet" src="@/assets/planetIcon.svg" alt="">
     <img class="image" src="@/assets/logInPageImage.svg" alt="">
     <div class="logo"> <p>LOGO</p> </div>
   </div>
 </div>
 <div class="split right col-12">
   <header class="text-left"> <p>LOGO</p> </header>
-  <div class="centered">
+  <div class="centered-right">
     <div class="container">
       <h1>Log in</h1>
         <p class="log-inf">Email Address</p>
@@ -85,12 +85,19 @@ export default {
   display: flex;
 }
 
-.centered {
+.centered-right {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   text-align: center;
+}
+.centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
 }
 .centered img {
   width: 1130px;
@@ -232,7 +239,7 @@ h1 {
   z-index: 2;
   bottom: 245px;
   opacity: 1;
-  right: 270px;
+  right: 220px;
   align-items: center;
   justify-content: center;
 
