@@ -22,7 +22,7 @@
             <div class="d-flex justify-content-between">
               <div class="d-flex justify-content-start">
                 <div class="checkbox"></div>
-                <p class="log-inf ml-3">REMEBER ME</p>
+                <p class="log-inf ml-3" id="remember-me">REMEBER ME</p>
               </div>
             <p class="forgot-password justify-content-end">Forgot Password</p>
           </div>
@@ -98,7 +98,8 @@ export default {
   text-align: center;
 }
 .centered img {
-  width: 1130px;
+ /* width: 700px;
+  height: 1050px;*/
   z-index: 2;
   position: absolute;
   top: -310px;
@@ -141,6 +142,9 @@ export default {
   font-size: 12px;
   color: rgba(0,0,0,0.87);
   text-align: left;
+}
+#remember-me {
+  margin-left: 10px;
 }
 .thin-text {
   font-family: Roboto-Light;
@@ -326,6 +330,8 @@ header p {
 @media only screen and (min-width: 992px) {
   .centered img {
     display: flex;
+    width: 700px;
+    height: 1050px;
   }
   [class*="col-"] {
     width: 50%;
@@ -339,6 +345,4 @@ header p {
   display: none;
 }
 }
-
-
 </style>

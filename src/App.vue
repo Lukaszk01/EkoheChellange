@@ -13,7 +13,6 @@
           </ul>  
         </div>
       </div>
-
 </template>
 
 <style>
@@ -34,29 +33,35 @@
   border-radius: 2%;
   background-color: #e0e0e0;
 }
-/*** TRANSITIONS ***/
-.fade-enter {
-  opacity: 0;
+
+button {
+  width: 5em;
+  height: 2em;
+  margin: 0.5em;
+  border-radius: 5px;
+  background: linear-gradient(to right, #16c0b0, #84cf6a);
+  font-size: 1em;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease-out;
+#nav {
+  padding: 30px;
 }
-.fade-leave-to {
-  opacity: 0;
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
 }
-.slide-fade-enter {
-  transform: translateX(10px);
-  opacity: 0;
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
-.slide-fade-enter-active,
-.slide-fade-leave-active {
-  transition: all 0.2s ease;
-}
-.slide-fade-leave-to {
-  transform: translateX(-10px);
-  opacity: 0;
-}
+
+
+
+
+
+
 .term-of-service {
   margin-left: 20px;
 }
